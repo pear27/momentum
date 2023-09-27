@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    /*font-weight: normal;*/
+    font-style: normal;
+}
+
+
+
+html,
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+#full {
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#center-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    font-family: S-CoreDream;
+}
+
+#date {
+    font-weight: 200;
+    margin: 0 auto;
+}
+
+#clock {
+    font-size: 135px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+#login-form h1 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+#login-form h2 {
+    font-weight: 100;
+    margin: 0 auto;
+}
+
+#name-input {
+    width: 400px;
+    height: 65px;
+    color: whitesmoke;
+    font-family: S-CoreDream;
+    font-size: 40px;
+    border-width: 0 0 5px;
+    border-color: whitesmoke;
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+}
+
+#center-container div {
+    display: flex;
+}
+
+#greeting {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#quote {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    color: whitesmoke;
+    opacity: 65%;
+    text-align: center;
+    font-family: S-CoreDream;
+
+}
+
+#weather {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    color: whitesmoke;
+    font-family: S-CoreDream;
+    text-align: right;
+    margin: 2%;
+}
+
+#weather span:first-child {
+    /* temperature */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#weather span:last-child {
+    /* city */
+    opacity: 70%;
+}
+
+#weather img {
+    width: 28px;
+    height: 28px;
+
+    position: absolute;
+    top: 0%;
+    right: 40px;
+}
+
+#todo-container {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    z-index: 1;
+}
+
+#todo-input {
+    width: 250px;
+    height: 30px;
+    color: whitesmoke;
+    font-family: S-CoreDream;
+    font-size: 20px;
+    border-width: 0 0 2px;
+    border-color: whitesmoke;
+    background-color: transparent;
+    outline: none;
+}
+
+#reset-button {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 2%;
+    width: 80px;
+    height: 28px;
+    border: solid 1px;
+    border-radius: 3px;
+    font-family: S-CoreDream;
+
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+#todo-list {
+    list-style: none;
+    padding-left: 1%;
+
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: S-CoreDream;
+}
+
+#todo-list img {
+    width: 24px;
+    height: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.ButtonLeave {
+    opacity: 70%;
+}
+
+.checkedToDo {
+    text-decoration: line-through;
+}
+
+.checkButton {
+    position: absolute;
+    right: 25px;
+}
+
+.deleteButton {
+    position: absolute;
+    right: 0;
+}
+
+
+@media (max-width: 790px) {
+
+    #center-container {
+        top: 30%;
+    }
+
+    #date {
+        font-size: 15px;
+    }
+
+    #clock {
+        font-size: 55px;
+    }
+
+    #login-form h1 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    #login-form h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #name-input {
+        width: 250px;
+        height: 40px;
+        font-size: 30px;
+        border-width: 0 0 3px;
+    }
+
+    #greeting {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #quote {
+        font-size: 12px;
+    }
+
+    #weather {
+        margin: 5%;
+    }
+
+    #todo-container {
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0%;
+    }
+
+    #reset-button {
+        margin: 5%;
+    }
+}
