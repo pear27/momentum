@@ -22,6 +22,7 @@ function buttonEnterLeave(button) {
     // button leave class add & remove
 
     button.classList.add(BUTTONLEAVE_CLASSNAME);
+    button.classList.add("curserPointer");
 
     button.addEventListener('mouseenter', () => {
         button.classList.remove(BUTTONLEAVE_CLASSNAME);

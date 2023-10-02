@@ -188,6 +188,10 @@ body {
     right: 0;
 }
 
+.curserPointer {
+    cursor: pointer;
+}
+
 
 @media (max-width: 790px) {
 
